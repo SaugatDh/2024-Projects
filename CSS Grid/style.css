@@ -1,0 +1,30 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 5em 0 0 0;
+  padding: 0;
+  line-height: 1.6;
+  word-spacing: 1.4px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--clr-dark);
+  background-color: var(--clr-light);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border: 10px solid black;
+}
+
+.item {
+    text-align: center;
+  padding: 0.5em;
+  background-color: #ffffff;
+  font-weight: 700;
+  border: 10px solid rgba(173, 8, 8, 0.699);
+}

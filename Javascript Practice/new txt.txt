@@ -1,0 +1,130 @@
+Use simple javascript to solve following projects. Apply css to style the project. 
+
+1.  Personalized Greeting App 
+    Concepts:  Variables, Functions, Basic Input
+   - Create a page that asks for the user’s name.
+   - Use JavaScript to store the name and then show a personalized greeting like, "Hello, [name]! Welcome to my website!"
+
+Steps:
+1. Create an input box for the name.
+2. Add a button that the user clicks after entering their name.
+3. Use JavaScript to capture the name and display the greeting.
+
+ 
+
+2.  Age Calculator 
+    Concepts:  Variables, Functions, Basic Input
+   - Build a small app where users can enter their birth year.
+   - The app calculates their current age and shows the result.
+
+Steps:
+1. Ask for the user’s birth year.
+2. Get the current year using JavaScript (`new Date().getFullYear()`).
+3. Subtract the birth year from the current year and display their age.
+
+ 
+
+3.  Even or Odd Number Checker 
+    Concepts:  Variables, Conditional Statements
+   - Create an app where the user enters a number.
+   - JavaScript will check if the number is  even  or  odd  and show the result.
+
+Steps:
+1. Create an input box where the user types a number.
+2. Add a button to check if the number is even or odd.
+3. Use an `if-else` condition to display "Even" if the number is divisible by 2, and "Odd" if it isn't.
+
+ 
+
+4.  Simple Calculator 
+    Concepts:  Variables, Functions, Conditional Statements
+   - Create a basic calculator that can add, subtract, multiply, or divide two numbers.
+   - The user enters two numbers, selects an operation, and gets the result.
+
+#### Steps:
+1. Create two input boxes for numbers.
+2. Add buttons for `Add`, `Subtract`, `Multiply`, and `Divide`.
+3. Write a function that performs the calculation based on which button is clicked and displays the result.
+
+ 
+
+ 5.  Number Guessing Game 
+    Concepts:  Variables, Conditional Statements, Loops
+   - The computer picks a random number between 1 and 10.
+   - The user has to guess the number. After each guess, the computer will tell if the guess is too high or too low.
+   - Once the user guesses correctly, display "You guessed it!"
+
+ Steps:
+1. Generate a random number using `Math.random()` and store it.
+2. Ask the user to input a guess.
+3. Use a loop to let the user guess until they find the correct number.
+4. Use conditions to check if the guess is higher, lower, or correct.
+
+ 
+
+ 6.  Counting Game 
+    Concepts:  Loops
+   - Make an app that counts from 1 to 10 and displays each number on the screen.
+   - You can add a twist: the app asks the user to count along, and if they miss a number, it shows a message like, "Oops, you missed [number]!"
+
+ Steps:
+1. Use a `for` loop to count from 1 to 10.
+2. Display each number in a list or in the console.
+3. Add input for the user to guess the next number, and check if they are correct as they count along.
+
+ 
+
+
+
+ 7.  Temperature Converter 
+    Concepts:  Variables, Functions
+   - Create a simple tool that converts temperatures between Celsius and Fahrenheit.
+   - The user enters a temperature, chooses which conversion they want, and sees the result.
+
+ Steps:
+1. Ask for the temperature and whether it’s in Celsius or Fahrenheit.
+2. Write a function that converts Celsius to Fahrenheit and vice versa.
+3. Display the converted temperature.
+
+ 
+
+ 8.  Days Until Your Birthday 
+    Concepts:  Variables, Conditional Statements, Functions
+   - Ask the user for their birthday (day and month).
+   - Calculate how many days are left until their next birthday based on today’s date.
+
+#### Steps:
+1. Capture the user’s birthday.
+2. Use JavaScript’s `Date()` object to get the current date.
+3. Calculate how many days are left until the user’s birthday (if it has already passed this year, calculate for the next year).
+4. Display the number of days remaining.
+
+ 
+
+ 9.  FizzBuzz Game 
+    Concepts:  Loops, Conditional Statements
+   - Write a program that prints numbers from 1 to 100.
+   - For every number divisible by 3, print "Fizz" instead.
+   - For every number divisible by 5, print "Buzz".
+   - For numbers divisible by both 3 and 5, print "FizzBuzz".
+
+Steps:
+1. Use a `for` loop to print numbers from 1 to 100.
+2. Use `if-else` statements to check whether a number is divisible by 3, 5, or both.
+3. Print "Fizz", "Buzz", or "FizzBuzz" accordingly.
+
+ 
+
+10.  Simple Rock-Paper-Scissors Game 
+    Concepts:  Variables, Conditional Statements, Loops
+   - Create a basic Rock-Paper-Scissors game where the user plays against the computer.
+   - The computer randomly picks rock, paper, or scissors.
+   - The user inputs their choice, and the program determines who wins.
+
+ Steps:
+1. Ask the user to pick rock, paper, or scissors.
+2. Use `Math.random()` to make the computer pick a random choice.
+3. Use conditions to compare the user’s and computer’s choices to determine the winner.
+4. Display who won the round.
+
+ 

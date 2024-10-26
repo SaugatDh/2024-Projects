@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even or Odd Checker</title>
+    <style>
+    body{
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: #f4f4f9;
+        margin:0;
+        padding:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+    }
+    .container{
+        background-color:#ffffff;
+        padding:20px;
+        border-radius:8px;
+        box-shadow:0 0 10px rgba ( 0,0,0,0.1);
+        text-align: center;
+        width:300px;
+
+    }
+    h1{
+        font-size: 24px;
+        margin-bottom: 20px;
+        color:#333;
+    }
+    input[type="number"]{
+        width:calc(100%-20px);
+        padding:10px;
+        margin-bottom:20px;
+        border:2px solid #ddd;
+        border-radius:4px;
+
+        font-size:16px;
+   
+    }
+    button{
+        background-color: #28a745;
+        color:white;
+        padding:10px 20px;
+        border:none;
+        cursor:pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        transition:background-color 0.3s ease;
+    }
+    button:hover{
+        background-color:#218838;
+
+    }
+    p{
+        font-size: 18px;
+        color:#333;
+        margin-top:20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="input-number"><h1>Enter the number.</h1>
+        <input type="number" id="input-number" placeholder="Enter a number">
+        <button id="calculate">Enter</button></label>
+        <p id="demo"></p>
+    </div>
+    <script>
+        const calculateBtn = document.getElementById("calculate");
+        const resultDisplay = document.getElementById("demo");
+
+        calculateBtn.addEventListener('click', () => {
+            const number = document.getElementById("input-number").value; // Get value inside the event listener
+            const n = parseInt(number); // Convert input to an integer
+
+            if (isNaN(n)) {
+                resultDisplay.innerText = "Please enter a valid number."; // Handle invalid input
+            } else if (n % 2 === 0) {
+                resultDisplay.innerText = "Even";
+            } else {
+                resultDisplay.innerText = "Odd";
+            }
+        });
+    </script>
+</body>
+</html>

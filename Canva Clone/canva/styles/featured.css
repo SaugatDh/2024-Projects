@@ -1,0 +1,51 @@
+.featured_container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 72px;
+    border-top: 1px solid rgba(83, 116, 151, 0.15);
+    margin:5rem;
+    gap: 2rem;
+   
+    
+}
+.featured{
+    display: flex;
+    gap: 2rem;
+    
+}
+.featured img{
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.featured div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%; 
+}
+.featured .details{ 
+
+  justify-content: center;
+    
+    
+}
+.featured button{
+    width: fit-content;
+    border: 1px solid rgb(231, 221, 221);
+}
+.featured svg{
+    height: 2rem;
+    width: 2rem;
+    display: inline-flex;
+}
+.featured h2{
+    font-size: 32px;
+    line-height: 2.5
+}
+.featured p{
+    font-size: 1rem;
+}

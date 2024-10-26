@@ -1,0 +1,68 @@
+
+.trusted_container{
+    text-align: center;
+   
+}
+
+
+.wrapper{
+/* 
+    width: 90%;
+    max-width: 1280px;  */
+    margin-inline: auto; 
+    position:relative;
+    height: 50px;
+    margin-top: 3rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(0,0,0,0),
+        rgba(0,0,0,1)20%,
+        rgba(0,0,0,1)80%,
+        rgba(0,0,0,0)
+        ); 
+ }
+.item{
+    width:fit-content;
+    position: absolute;
+    left:max(calc(200px*8),100%);
+    animation-name:scrollLeft;
+    animation-duration:30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    margin: 0 -2rem ;
+    /* animation-duration: -15s; */
+}
+
+@keyframes scrollLeft{
+    to{
+        left: -200px;
+    }
+}
+.item1 {
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+}
+
+.item img{
+  height: 50px;
+} 

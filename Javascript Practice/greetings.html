@@ -1,0 +1,61 @@
+<!-- Create greeting page with javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family:arial,sans-serif;
+        background-color: #f0f8ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;   
+    }
+    .container{
+        text-align: center;
+       padding: 20px;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+       background-color: #fff;
+    }
+    button{
+        padding:10px 20px;
+        font-size: 16px;
+        cursor:pointer;
+        background-color: #4caf50;
+        color:white;
+        border-radius:5px;
+
+    }
+    button:hover{
+        background-color: #45a049;
+    }
+    #demo{
+        margin-top:20px;
+        font-size:18px;
+        color:#333;
+    }
+</style>
+<body>
+    <div class="container">
+    <h1 >Click the button to receive a message. </h1>
+    <button onclick="showme()">Click me </button>
+    <p id="demo"></p>
+</div>
+    <script>
+        function showme(){
+            document.getElementById("demo").innerHTML="Hello, Welcome to Javascript.";
+        }
+    </script>
+</body>
+</html>
