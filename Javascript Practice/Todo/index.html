@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Project #1 : Todo App</title>
+</head>
+<style>
+    *,
+    *::after,
+    *::before{
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0;
+        font-family: system-ui;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to right, #7748f8, #a6f9ff);
+    }
+    .container{
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+     #task{
+        width: 70%;
+       border:2px solid #ddd;
+       padding: 10px;
+       border-radius: 4px;
+       margin-right: 10px;
+        
+     }
+    .btn{
+        padding: 10px 20px;
+        background-color: #5F9EA0;
+        color: white;
+        border-radius: 4px;
+      
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s;
+    }
+    .btn:hover{
+        background-color: #4682b4;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #f0f0f0; /* Firefox */
+}
+
+ul::before {
+    content: "No tasks available";
+    color: #ccc;
+    font-size: 1.2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: block;
+}
+
+ul.has-items::before {
+    display: none;
+}
+
+/* Scrollbar styling for Chrome, Edge, and Safari */
+ul::-webkit-scrollbar {
+    width: 2px;
+}
+
+ul::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+   
+    border-radius: 10px;
+    border: 2px solid #f0f0f0;
+}
+
+
+
+li {
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+}
+
+li span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+li button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+li button:hover svg {
+    color: #ff3d3d;
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <h1>ToDo</h1>
+        <form action="" id="todo">
+        <input type="text" name="task" id="task" placeholder="Add a new task...">
+        <button class="btn" type="submit">Add task</button>
+    </form>
+    <ul id="todo-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

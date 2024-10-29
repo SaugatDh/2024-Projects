@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 24px;
+      
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    .image-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: #ffffff;
+      padding-top: 125%; /* Maintains aspect ratio */
+      position: relative;
+    }
+
+    .image-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-grid">
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x400" alt="Sample Image 1">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x300" alt="Sample Image 2">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x450" alt="Sample Image 3">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x250" alt="Sample Image 4">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x200" alt="Sample Image 5">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x350" alt="Sample Image 6">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x300" alt="Sample Image 7">
+    </div>
+    <div class="image-item">
+      <img src="https://via.placeholder.com/300x400" alt="Sample Image 8">
+    </div>
+  </div>
+
+</body>
+</html>

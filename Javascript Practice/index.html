@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="demo">Hello</p>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">Date</button>
+    <button onclick="document.getElementById('demo').style.fontSize='2rem'">Font Size</button>
+    <button onclick='document.getElementById("demo").innerHTML="Hello World!"'>Change text</button>
+    <button onclick="document.getElementById('demo').style.display='none'">Hide</button>
+ <button onclick="document.getElementById('demo').style.display='block'">Show</button>
+
+    <p><button onclick="document.getElementById('img').src='pic_bulboff.gif'">Turn off the light</button>
+    <img src="pic_bulboff.gif" alt="" id="img">
+        <button onclick="document.getElementById('img').src='pic_bulbon.gif'">Turn on the light</button>
+    </p>
+   <p id="demo2">
+
+   </p>
+   <script>
+    document.write("This is text from javascript using document.write().");
+    document.getElementById('demo2').innerHTML="This is text using innerHTML in id demo2";
+    // window.alert("Hi this is alert message");
+    console.log("Hi this is a message to the console. ");
+   </script>
+</body>
+</html>
