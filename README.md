@@ -14,10 +14,7 @@ Welcome to my GitHub! Here you can find my daily coding exercises and projects I
 I'm a web development enthusiast currently exploring various technologies including HTML, CSS, JavaScript, and React. I enjoy building projects and enhancing my coding skills daily!
 
 ## 📅 Daily Practices
-| Date       | Description                               | Link         |
-|------------|-------------------------------------------|--------------|
-| 2024-10-01 | Built a simple calculator using JavaScript | [View Code](https://github.com/SaugatDh/) |
-| 2024-10-02 | Styled a webpage using CSS Grid           | [View Code](https://github.com/SaugatDh/) |
+>_<
 
 ## ⚙️ Technologies I am learning and practicing actively.
 - HTML
