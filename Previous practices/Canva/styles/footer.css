@@ -1,0 +1,51 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid rgb(53, 71, 90,.2);
+    box-sizing: border-box;
+    
+    
+    margin:  48px 32px;
+    
+}
+footer li{
+    list-style-type: none;
+}
+.up{
+    display: flex;
+     
+}
+
+.link_box{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.link_box ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0;
+    
+}
+.link_box .features{
+    
+    display: flex;
+   
+    gap: 1rem;
+}
+
+.explore_f{
+    flex: 1;
+}
+.community{
+    flex: 1;
+}
+.download{
+    flex: 1;
+}
+.company{
+    flex: 1;
+}
